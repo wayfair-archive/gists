@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="root" type="id" />
+    <item name="recycler_view" type="id" />
+    <item name="list_card" type="id" />
+    <item name="profile_circle_image_viewholder" type="id" />
+    <item name="profile_text_viewholder" type="id" />
+    <item name="shadow_view_anko_viewholder" type="id" />
+    <item name="node_id_text_viewholder" type="id" />
+    <item name="url_text_viewholder" type="id" />
+    <item name="html_url_id_text_viewholder" type="id" />
+    <item name="type_id_text_viewholder" type="id" />
+    <item name="site_admin_text_viewholder" type="id" />
+</resources>

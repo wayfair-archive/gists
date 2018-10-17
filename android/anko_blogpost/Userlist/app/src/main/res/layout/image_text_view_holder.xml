@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView android:id="@+id/profile_circle_image_viewholder"
+               android:background="@drawable/circle_frame"
+               android:layout_width="@dimen/image_dimension"
+               android:layout_height="@dimen/image_dimension"
+               android:layout_marginStart="@dimen/standard_margin"
+               android:layout_marginLeft="@dimen/standard_margin"
+               android:layout_marginTop="@dimen/standard_margin"
+               android:layout_marginBottom="@dimen/standard_margin"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView android:id="@+id/profile_text_viewholder"
+              android:textSize="@dimen/small_text"
+              android:layout_marginStart="@dimen/big_margin"
+              android:layout_marginLeft="@dimen/big_margin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/profile_circle_image_viewholder"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toTopOf="@+id/node_id_text_viewholder"
+              tools:text="Profile"/>
+
+    <TextView android:id="@+id/node_id_text_viewholder"
+              android:textSize="@dimen/small_text"
+              android:layout_marginStart="@dimen/big_margin"
+              android:layout_marginLeft="@dimen/big_margin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/profile_circle_image_viewholder"
+              app:layout_constraintTop_toBottomOf="@+id/profile_text_viewholder"
+              app:layout_constraintBottom_toTopOf="@+id/site_admin_text_viewholder"
+              tools:text="Node id"/>
+
+    <TextView android:id="@+id/site_admin_text_viewholder"
+              android:textSize="@dimen/small_text"
+              android:layout_marginStart="@dimen/big_margin"
+              android:layout_marginLeft="@dimen/big_margin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/profile_circle_image_viewholder"
+              app:layout_constraintTop_toBottomOf="@+id/node_id_text_viewholder"
+              app:layout_constraintBottom_toTopOf="@+id/url_text_viewholder"
+              tools:text="Site Admin: true"/>
+
+    <TextView android:id="@+id/url_text_viewholder"
+              android:textSize="@dimen/small_text"
+              android:layout_marginStart="@dimen/big_margin"
+              android:layout_marginLeft="@dimen/big_margin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/profile_circle_image_viewholder"
+              app:layout_constraintTop_toBottomOf="@+id/site_admin_text_viewholder"
+              app:layout_constraintBottom_toTopOf="@+id/html_url_id_text_viewholder"
+              tools:text="url"/>
+
+    <TextView android:id="@+id/html_url_id_text_viewholder"
+              android:textSize="@dimen/small_text"
+              android:layout_marginStart="@dimen/big_margin"
+              android:layout_marginLeft="@dimen/big_margin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/profile_circle_image_viewholder"
+              app:layout_constraintTop_toBottomOf="@+id/url_text_viewholder"
+              app:layout_constraintBottom_toTopOf="@+id/type_id_text_viewholder"
+              tools:text="html url"/>
+
+    <TextView android:id="@+id/type_id_text_viewholder"
+              android:textSize="@dimen/small_text"
+              android:layout_marginStart="@dimen/big_margin"
+              android:layout_marginLeft="@dimen/big_margin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/profile_circle_image_viewholder"
+              app:layout_constraintTop_toBottomOf="@+id/html_url_id_text_viewholder"
+              app:layout_constraintBottom_toTopOf="@+id/shadow_view_anko_viewholder"
+              tools:text="type"/>
+
+    <View android:id="@+id/shadow_view_anko_viewholder"
+          android:layout_marginStart="@dimen/big_margin"
+          android:layout_marginLeft="@dimen/big_margin"
+          android:background="@color/gray"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toEndOf="@id/profile_circle_image_viewholder"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/shadow_height"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
